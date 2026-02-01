@@ -1,0 +1,7 @@
+module.exports = {
+  OVERDUE_PER_DAY_PLN: 1,
+  OVERDUE_MAX_PLN: 50,
+
+  LOST_BOOK_FINE_PLN: 50,
+  DAMAGED_BOOK_FINE_PLN: 20,
+};
