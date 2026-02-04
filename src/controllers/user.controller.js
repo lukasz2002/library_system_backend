@@ -29,7 +29,7 @@ const getUserById = async (req, res) => {
 const getUsersList = async (req, res) => {
   try {
     const users = await User.find(
-      { isActive: true },
+      { isActive: true, _id: { $ne: req.user.id } },
       {
         firstName: 1,
         lastName: 1,
